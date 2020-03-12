@@ -125,3 +125,4 @@
 #         sum+=1
 #     integer_number = integer_number//10
 # print('количество цифр пять в этом числе - ',sum)
+
