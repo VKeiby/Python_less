@@ -54,13 +54,13 @@
 #      # Обработка списков (map, filter, reduce)
 #
 # # ---------------------------------map
-# integer_list = [9,3,6,2,4]
-#
-# #map(function, list) ----> map -----> list(map)
-#
-# #new_integer_list = list(map(str, integer_list))
-# new_integer_list = list(map(lambda x: x**2, integer_list))
-# print(new_integer_list)
+integer_list = [9,3,6,2,4]
+
+#map(function, list) ----> map -----> list(map)
+
+new_integer_list = list(map(str, integer_list))
+#new_integer_list = list(map(lambda x: x**2, integer_list))
+print(new_integer_list)
 #
 # # --------------------------------filter
 # integer_list = [9,3,6,2,4]
@@ -101,15 +101,15 @@
 # who = f'{Smith} is {44} years old'
 # print(who)
 # '''
-# # -----------------------------Methods
-# names = 'Vitya,Vika,Vera,Viorica'
-# print(names.split())
-# print(names.split(','))
+# -----------------------------Methods
+names = 'Vitya,Vika,Vera,Viorica'
+print(names.split())
+print(names.split(','))
 #
-# # -----------------------------Formatting
-# print(names.upper())
-# print(names.title())
-# print(names.lower())
+# -----------------------------Formatting
+print(names.upper())
+print(names.title())
+print(names.lower())
 #
 # # -----------------------------replace str
 # print()
