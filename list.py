@@ -102,14 +102,14 @@ print(new_integer_list)
 # print(who)
 # '''
 # -----------------------------Methods
-names = 'Vitya,Vika,Vera,Viorica'
-print(names.split())
-print(names.split(','))
-#
-# -----------------------------Formatting
-print(names.upper())
-print(names.title())
-print(names.lower())
+# names = 'Vitya,Vika,Vera,Viorica'
+# print(names.split())
+# print(names.split(','))
+# #
+# # -----------------------------Formatting
+# print(names.upper())
+# print(names.title())
+# print(names.lower())
 #
 # # -----------------------------replace str
 # print()
