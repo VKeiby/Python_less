@@ -22,6 +22,7 @@ splitText=origin.split()
 
 # -----------lower
 #print(origin.lower())
+#low_listTxt = (map(lambda x: x.lower(),new_list))
 low_listTxt = list((map(lambda x: x.lower(),new_list)))
 #print(type(low_listTxt),''.join(low_listTxt))
 # print(low_listTxt)
@@ -39,3 +40,5 @@ for key in listD:
 
 print(DictOut)
 print(len(DictOut),type(DictOut))
+
+# -------------Freq PH
