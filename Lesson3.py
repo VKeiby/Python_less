@@ -24,22 +24,28 @@ splitText=origin.split()
 #print(origin.lower())
 #low_listTxt = (map(lambda x: x.lower(),new_list))
 low_listTxt = list((map(lambda x: x.lower(),new_list)))
-#print(type(low_listTxt),''.join(low_listTxt))
-# print(low_listTxt)
+#print(type(low_listTxt),len(low_listTxt),''.join(low_listTxt))
 
-# ------------dict
+
+# ------------dict (Count)
 dictText = str(''.join(low_listTxt))
 listD = dictText.rsplit(" ")
 DictOut = dict()
-
 for key in listD:
     if not key in DictOut:
         DictOut[key] = 1
     else:
         DictOut[key] += 1
-
 print(DictOut)
-print(len(DictOut),type(DictOut))
+#print(len(DictOut),type(DictOut))
 
-# -------------Freq PH
+# -------------Freq Words
+SortDict = list(DictOut.items())
+SortDict.sort(key=lambda i: i[1], reverse = True)
+topWords = SortDict[0:5]
+print(topWords)
+
+# -------------Number of words
+print('Количество слов в тексте = ',len(low_listTxt))
+
 
