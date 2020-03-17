@@ -36,16 +36,16 @@ for key in listD:
         DictOut[key] = 1
     else:
         DictOut[key] += 1
-print(DictOut)
-#print(len(DictOut),type(DictOut))
+print(len(DictOut),DictOut)
 
 # -------------Freq Words
 SortDict = list(DictOut.items())
 SortDict.sort(key=lambda i: i[1], reverse = True)
 topWords = SortDict[0:5]
-print(topWords)
+print('Самые популярные слова = ',topWords)
 
 # -------------Number of words
 print('Количество слов в тексте = ',len(low_listTxt))
+print('Количество разных слов в тексте = ',len(DictOut))
 
 
