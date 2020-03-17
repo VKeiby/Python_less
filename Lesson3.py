@@ -49,6 +49,13 @@ print('Количество слов в тексте = ',len(low_listTxt))
 print('Количество разных слов в тексте = ',len(DictOut))
 
 # ----------LEMMA------
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
+# --------------
 
-
-
+print('-------- Лемматизация текста:')
+words = []
+for word in listD:
+    p = morph.parse(word)[0]
+    words.append(p.normal_form)
+print(' '.join(words))
