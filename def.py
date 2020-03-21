@@ -1,3 +1,6 @@
+# This Python file uses the following encoding: utf-8
+import os, sys
+
 def add(x,y):
     return x+y
 
@@ -13,7 +16,7 @@ print(max)
 list_50 = list(filter(lambda x: x>50, list_temp))
 print(list_50)
 
-#Ïğîñòåéøàÿ ôóíêöèÿ è îïèñàíèå
+#ĞŸÑ€Ğ¾ÑÑ‚ĞµĞ¹ÑˆĞ°Ñ Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ¸ Ğ¾Ğ¿Ğ¸ÑĞ°Ğ½Ğ¸Ğµ
 def add(x,y):
     '''
     :param x:
@@ -22,13 +25,13 @@ def add(x,y):
     '''
     return x+y
 
-help(add) # ïğîñìîòğ îïèñàíèÿ ôóíêöèè
+help(add) # Ğ¿Ñ€Ğ¾ÑĞ¼Ğ¾Ñ‚Ñ€ Ğ¾Ğ¿Ğ¸ÑĞ°Ğ½Ğ¸Ñ Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸
 
-# Âûçîâ ôóíêöèè
+# Ğ’Ñ‹Ğ·Ğ¾Ğ² Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¸
 print(add(100,101))
 print(add('Dima','+Kate'))
 
-# Ôóíêöèÿ âîçâğàùàåò ôóíêöèş
+# Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ²Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ñ
 def f1(n):
     def f2(m):
         return n+m
@@ -38,17 +41,17 @@ print(type(new_f))
 new_f = f1(100)
 print(new_f(250))
 
-#Äàæå áåç return ôóíêöèÿ âåğíåò None
+#Ğ”Ğ°Ğ¶Ğµ Ğ±ĞµĞ· return Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ²ĞµÑ€Ğ½ĞµÑ‚ None
 def f():
     pass
 
 print(f())
 
 
-#Àğãóìåíòû ôóíêöèé-------------
--------------------------------
+#ĞÑ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚Ñ‹ Ñ„ÑƒĞ½ĞºÑ†Ğ¸Ğ¹-------------
 
-# Îáÿçàòåëüíûå àğãóìåíòû è íå îáÿçàòåëüíûå
+
+# ĞĞ±ÑĞ·Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğµ Ğ°Ñ€Ğ³ÑƒĞ¼ĞµĞ½Ñ‚Ñ‹ Ğ¸ Ğ½Ğµ Ğ¾Ğ±ÑĞ·Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğµ
 def add(x,y, z = 10):
     '''
     :param x:
@@ -78,7 +81,7 @@ def func(**kwargs):
 func(a = 1, b = 2, c = 'Volvo', d = 1.5)
 
 
-# Âñå âìåñòå
+# Ğ’ÑĞµ Ğ²Ğ¼ĞµÑÑ‚Ğµ
 def func_difficult(x, y = 2, *args, **kwargs):
     print(type(x), x)
     print(type(y), y)
@@ -125,7 +128,7 @@ list_3 = list(map(lambda x,y: x*y, list_1, list_2))
 print(list_3)
 
 # reduce
-from functools import reduce # íà÷èíàÿ ñ 3...
+from functools import reduce # Ğ½Ğ°Ñ‡Ğ¸Ğ½Ğ°Ñ Ñ 3...
 
 list_temp = [43,12,41,100,101,4]
 max = reduce(lambda a,b: a if a>b else b,list_temp)
