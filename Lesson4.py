@@ -30,10 +30,10 @@ def lessLetter(sortedDict):
 dbase = ['Yana','Marina','Vasiliy','Alex','Egor','Yaroslav','Dariya','Nina','Katerine','Fedor','Anton','Victoria',
          'Vera','Boris','Yasha','Grisha','Tolik','Timofey','Sandra','Nastya','Kseniya','Kristina','Polina','Tanya']
 
-outList=(f(dbase,105))
+# print(f(dbase,5))
+outList=(f(dbase,200))
 sortedDict=countNsort(outList)
 topWord(sortedDict)
 lessLetter(sortedDict)
-
 
 # ------------..PRO..----------
