@@ -1,24 +1,24 @@
 # # Тип данных СПИСОК (list)------------------------
 # #------------------------------------------
 #      # Инициализация (генераторы)
-# list_temp = [] # пустой список
-# print(type(list_temp))
-# list_temp = [1.2, 123, 'Volvo', [1,2,3]]
-#
-# for el in list_temp:
-#     print(el, type(el))
-#
+list_temp = [] # пустой список
+print(type(list_temp))
+list_temp = [1.2, 123, 'Volvo', [1,2,3]]
+
+for el in list_temp:
+    print(el, type(el))
+
 # # --------------------------list
 # list_str = list('Volvo')
 # print(list_str)
-#
-#      # Обращения к элементам списка, подсписки
-# for i in range(len(list_temp)):
-#     print(i, ':', list_temp[i])
-# for i in range(len(list_temp)):
-#     print(i, ':', list_temp[i:])
-# for i in range(len(list_temp)):
-#     print(i, ':', list_temp[:i])
+
+     # Обращения к элементам списка, подсписки
+for i in range(len(list_temp)):
+    print(i, ':', list_temp[i])
+for i in range(len(list_temp)):
+    print(i, ':', list_temp[i:])
+for i in range(len(list_temp)):
+    print(i, ':', list_temp[:i])
 #      # Функции со списками
 # print(len(list_temp))
 #
