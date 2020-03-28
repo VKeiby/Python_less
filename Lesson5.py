@@ -12,6 +12,7 @@ def SimpleNum(p):
             countD += 1
         if dividers != [1,p]:
             print('Это составное число, имеющее делители ',dividers)
+            print('Cамый большой делитель числа: ', dividers[-1])
         else:
             listP.append(p)
             print('This is simple number',listP)
@@ -55,7 +56,7 @@ def CanonicNum(listSimpNum):
 listSimpNum = MassiveP() # Формируем массив простых чисел до 1000
 NUM=int(input('Input number 1-1000, for exit inter 0: '))
 while NUM != 0:
-    print('Number entered= ',NUM)
+    print('Number entered = ',NUM)
     SimpleNum(NUM)
     CanonicNum(listSimpNum)
     NUM = int(input('One more? For stop inter 0: '))
