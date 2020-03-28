@@ -7,3 +7,5 @@
 [Lesson 3](https://github.com/VKeiby/Python_less/blob/master/Lesson3.py) - Списки, словари, множества, Лемма
 
 [Lesson 4](https://github.com/VKeiby/Python_less/blob/master/Lesson4.py) - function
+
+[Lesson 5](https://github.com/VKeiby/Python_less/blob/master/Lesson5.py) - Simple NUM
