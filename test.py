@@ -12,3 +12,4 @@ def test_1_CanonicNum():
     assert CanonicNum(6) == 8
 # def test_get_divisors(divisors_10):
 #     assert dv.get_divisors(10) == divisors_10
+132
