@@ -26,6 +26,7 @@ def topWord(sortedDict):
 def lessLetter(sortedDict):
     letter_tmp=str(sortedDict[-1])
     print('Самая редкая буква имени = ', letter_tmp[2])
+    return letter_tmp[2]
 
 dbase = ['Yana','Marina','Vasiliy','Alex','Egor','Yaroslav','Dariya','Nina','Katerine','Fedor','Anton','Victoria',
          'Vera','Boris','Yasha','Grisha','Tolik','Timofey','Sandra','Nastya','Kseniya','Kristina','Polina','Tanya']

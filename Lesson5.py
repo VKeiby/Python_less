@@ -19,7 +19,7 @@ def SimpleNum(p):
     if p==2 or p==1:
         listP.append(p)
         print('This is simple number', listP)
-    return
+    return listP
 
 def MassiveP():
     listP = []
