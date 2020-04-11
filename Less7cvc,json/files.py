@@ -1,48 +1,49 @@
+# This Python file uses the following encoding: utf-8
 '''
-Работа с текстовыми файлами
+Р Р°Р±РѕС‚Р° СЃ С‚РµРєСЃС‚РѕРІС‹РјРё С„Р°Р№Р»Р°РјРё
 '''
 
-# Простой считывание/ открытие файла в режиме чтения
+# РџСЂРѕСЃС‚РѕР№ СЃС‡РёС‚С‹РІР°РЅРёРµ/ РѕС‚РєСЂС‹С‚РёРµ С„Р°Р№Р»Р° РІ СЂРµР¶РёРјРµ С‡С‚РµРЅРёСЏ
 # f = open('data')
 # content  = f.read()
 # print(content)
 # f.close()
 
-# Открыли файл в режими записи (содержимое удалилось)
+# РћС‚РєСЂС‹Р»Рё С„Р°Р№Р» РІ СЂРµР¶РёРјРё Р·Р°РїРёСЃРё (СЃРѕРґРµСЂР¶РёРјРѕРµ СѓРґР°Р»РёР»РѕСЃСЊ)
 # f = open('data', 'w')
 # content  = f.read()
 # print(content)
 # f.close()
 
-# Считывание файла построчно
+# РЎС‡РёС‚С‹РІР°РЅРёРµ С„Р°Р№Р»Р° РїРѕСЃС‚СЂРѕС‡РЅРѕ
 # f = open('data')
 # for line in f:
 #     print(line)
 # f.close()
 
 
-# Менеджер контекста
-with open('data') as f:
-    line = f.readline() # считывание одной строки
-    print(line)
-  # for line in f:
-  #     print(line)
+# РњРµРЅРµРґР¶РµСЂ РєРѕРЅС‚РµРєСЃС‚Р°
+# with open('data') as f:
+#     line = f.readline() # СЃС‡РёС‚С‹РІР°РЅРёРµ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРё
+#     print(line)
+#   # for line in f:
+#   #     print(line)
 
-# Считывание побайтно
+# РЎС‡РёС‚С‹РІР°РЅРёРµ РїРѕР±Р°Р№С‚РЅРѕ
 
-with open('data','r') as f:
-    data = f.read(10) # считывание одной строки
-    print(data, type(data))
+# with open('data','r') as f:
+#     data = f.read(10) # СЃС‡РёС‚С‹РІР°РЅРёРµ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРё
+#     print(data, type(data))
 
 
-# Запись в файл
-
+# Р—Р°РїРёСЃСЊ РІ С„Р°Р№Р»
+#
 # with open('data_new', 'w') as f:
-#   f.writeline('This is new file!')
+#   f.write('This is new file!')
 
 
-# Запись в списком
-data = ['1\n','2 \n','3 \n'] # '\n' - перенос строки
+# Р—Р°РїРёСЃСЊ РІ СЃРїРёСЃРєРѕРј
+data = ['1\n','2 \n','3 \n'] # '\n' - РїРµСЂРµРЅРѕСЃ СЃС‚СЂРѕРєРё
 
 with open('data_new', 'w') as f:
   f.writelines(data)

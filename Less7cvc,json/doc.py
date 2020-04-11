@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 import datetime
 
 from docxtpl import DocxTemplate
@@ -6,7 +7,7 @@ from docx.shared import Cm
 from docxtpl import DocxTemplate, InlineImage
 
 
-def get_context(company, result_sku_list): # возвращает словарь аргуменов
+def get_context(company, result_sku_list): # РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»РѕРІР°СЂСЊ Р°СЂРіСѓРјРµРЅРѕРІ
     return {
         'retailer': company,
         'sku_list': result_sku_list,
@@ -35,4 +36,4 @@ def generate_report(company, result_sku_list):
 def toFixed(numObj, digits=0):
     return f"{numObj:.{digits}f}"
 
-generate_report('Ozon', [0.78, 0.12, 0.05, 0.01, 0.01])
+generate_report('Ozon', )
