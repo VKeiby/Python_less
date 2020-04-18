@@ -4,6 +4,7 @@ import psutil
 import time
 import os
 
+# декоратор, замеряющий использование памяти.
 def show_memory(f):
     def wrapper(*args, **kwargs):
         proc = psutil.Process(os.getpid())
@@ -12,6 +13,7 @@ def show_memory(f):
         after = proc.memory_info().rss / 1000000
         print('Использовано {} памяти'.format(after - before))
     return wrapper
+
 
 # декоратор, замеряющий время выполнение функции.
 def showTime(f):
@@ -30,13 +32,15 @@ def numbers(num):
     naturalNumb = [n+1 for n in range(num)]
     return naturalNumb
 
-print('Generator:')
+
+
 @showTime
 @show_memory
 def generator(num):
     for i in range(num):
         yield i
 
-
+print('Generator:')
 generator(1000000)
+
 numbers(1000000)
