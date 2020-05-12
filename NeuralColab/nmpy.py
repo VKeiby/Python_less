@@ -30,12 +30,12 @@ def mean_arr(np_arr):
 my_array = np.loadtxt('iris.csv', delimiter=',', skiprows=1)
 
 my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
-v1_generated_array = np.random.uniform(my_array.shape[0], my_array.shape[1])
-# my_generated_array = np.random.randint(0, 43, (150,5))
-print(my_array.shape[0])
-print(my_array.shape[1])
-print(my_generated_array.shape,my_generated_array.dtype)
-print(v1_generated_array)
+# v1_generated_array = np.random.uniform(my_array.shape[0], my_array.shape[1])
+# my_generated_array = np.random.rand(0, 19, (150,5))
+# print(my_array.shape[0])
+# print(my_array.shape[1])
+# print(my_generated_array.shape,my_generated_array.dtype)
+# print(v1_generated_array)
 #
 # mean_arr(my_array)
 #
@@ -90,3 +90,22 @@ print(v1_generated_array)
 # print(3)
 # print(st_array)
 # print()
+
+# >>> a = np.array([[1, 2], [3, 4]])
+# >>> b = np.array([[5, 6], [7, 8]])
+# >>> np.vstack((a, b))
+# array([[1, 2],
+#        [3, 4],
+#        [5, 6],
+#        [7, 8]])
+# >>> np.hstack((a, b))
+# array([[1, 2, 5, 6],
+#        [3, 4, 7, 8]])
+
+multyArr = np.hstack((my_array, my_generated_array))
+# print(multyArr)
+print(multyArr.shape, multyArr.dtype)
+arrSplit = np.hsplit(multyArr, 5)
+print(len(arrSplit))
+print(arrSplit[4])
+print(arrSplit[4].dtype)
