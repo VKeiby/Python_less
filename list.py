@@ -1,18 +1,18 @@
 # # Тип данных СПИСОК (list)------------------------
 # #------------------------------------------
 #      # Инициализация (генераторы)
-# list_temp = [] # пустой список
+list_temp = [] # пустой список
 # print(type(list_temp))
-# list_temp = [1.2, 123, 'Volvo', [1,2,3]]
-#
+list_temp = [1.2, 123, 'Volvo', [1,2,3]]
+
 # for el in list_temp:
 #     print(el, type(el))
-#
+
 # # --------------------------list
-# list_str = list('Volvo')
+list_str = list('Volvo')
 # print(list_str)
-#
-#      # Обращения к элементам списка, подсписки
+
+     # Обращения к элементам списка, подсписки
 # for i in range(len(list_temp)):
 #     print(i, ':', list_temp[i])
 # for i in range(len(list_temp)):
@@ -24,7 +24,7 @@
 #
 #      # Операции со списками
 #
-# print(list_temp + list_str)
+print(list_temp + list_str)
 # print(list_temp*2)
 #
 #      # Методы
@@ -54,13 +54,13 @@
 #      # Обработка списков (map, filter, reduce)
 #
 # # ---------------------------------map
-integer_list = [9,3,6,2,4]
+# integer_list = [9,3,6,2,4]
 
 #map(function, list) ----> map -----> list(map)
 
-new_integer_list = list(map(str, integer_list))
+# new_integer_list = list(map(str, integer_list))
 #new_integer_list = list(map(lambda x: x**2, integer_list))
-print(new_integer_list)
+# print(new_integer_list)
 #
 # # --------------------------------filter
 # integer_list = [9,3,6,2,4]
