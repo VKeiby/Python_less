@@ -28,8 +28,8 @@ def mean_arr(np_arr):
 # print(np_lst.size)
 
 my_array = np.loadtxt('iris.csv', delimiter=',', skiprows=1)
-
 my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
+
 # v1_generated_array = np.random.uniform(my_array.shape[0], my_array.shape[1])
 # my_generated_array = np.random.rand(0, 19, (150,5))
 # print(my_array.shape[0])
@@ -102,10 +102,39 @@ my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
 # array([[1, 2, 5, 6],
 #        [3, 4, 7, 8]])
 
-multyArr = np.hstack((my_array, my_generated_array))
+# multyArr = np.hstack((my_array, my_generated_array))
 # print(multyArr)
-print(multyArr.shape, multyArr.dtype)
-arrSplit = np.hsplit(multyArr, 5)
-print(len(arrSplit))
-print(arrSplit[4])
-print(arrSplit[4].dtype)
+# print(multyArr.shape, multyArr.dtype)
+# arrSplit = np.hsplit(multyArr, 5)
+# print(len(arrSplit))
+# print(arrSplit[4])
+# print(arrSplit[4].dtype)
+
+# Создайте трехмерный массив размера 2 на 3 на 4, состоящий из случайных вещественных чисел от 15 до 37.
+# Используйте встроенные методы библиотеки np.random...
+
+# arr3d = np.random.uniform(15, 37, (2, 3, 4))
+
+# list_tmp = arr3d.tolist()
+# rand234 = np.array(list_tmp, dtype='object')
+#
+# for row in rand234:
+#   for column in row:
+#     for i in range(len(column)):
+#       if column[i]<20:
+#         column[i]='small'
+#       elif column[i]<=30 and column[i]>=20:
+#         column[i]='medium'
+#       elif column[i]>30:
+#         column[i]='large'
+# print(rand234)
+
+# Создайте одномерный массив из случайных 10 значений.
+#
+# Не используя цикл for, сумму значений с 3 по 7 элемент.
+# Найдите сумму квадратов последних двух элементов.
+
+generatArray = np.random.randint(0, 100, 10)
+print(generatArray)
+sumV37 = generatArray[3:7]
+print(sumV37.sum())
