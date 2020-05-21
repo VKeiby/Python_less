@@ -26,19 +26,25 @@ data1.dropna(axis = 0, how ='any', inplace=True)
 # год продажи YrSold
 # наличие бассейна можно определить по столбцу PoolArea
 
-# print(data1.loc[1170:1200, ['SalePrice','YrSold','PoolArea']])
-# df = data1.groupby(['SalePrice','YrSold','PoolArea']).count()
-
 df = data1.loc[:,['SalePrice','YrSold','PoolArea']]
-print(df.head())
+df.head(10)
 
 #задаем маску
-# priceMask = df['SalePrice'] > 300000
-# YrMask = df['YrSold'] == 2007
-# PoolMask = df['PoolArea'] != 0
+# priceMask = data1['SalePrice'] > 300000
+# YrMask = data1['YrSold'] == 2007
+# PoolMask = data1['PoolArea'] == True
 
-winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] != 0)
-df[winner].head()
+winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] > 1)
+print(df[winner])
+
+# Задача 6
+# Добавьте к табличке data_1 новый столбец с названием 'Flag'.
+# Присвойте ему значения 0 или 1 в случайном порядке. Для этого:
+#
+# создайте одномерный массив из случайных целых чисел 0 или 1
+# размер массива должен соответствовать кол-ву наблюдений в основной табличке
+# создайте новый столбец и присвойте ему значения одномерного массива
+
 
 # fig, ax = plt.subplots(figsize=(20,12))
 # sns_heatmap = sns.heatmap(data1.isnull(), yticklabels=False, cbar=False, cmap='viridis')
