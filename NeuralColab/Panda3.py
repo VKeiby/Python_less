@@ -26,17 +26,23 @@ data1.dropna(axis = 0, how ='any', inplace=True)
 # год продажи YrSold
 # наличие бассейна можно определить по столбцу PoolArea
 
+# print(data1.loc[1170:1200, ['SalePrice','YrSold','PoolArea']])
+# df = data1.groupby(['SalePrice','YrSold','PoolArea']).count()
+
+df = data1.loc[:,['SalePrice','YrSold','PoolArea']]
+print(df.head())
+
 #задаем маску
-priceMask = data1['SalePrice'] > 300000
-YrMask = data1['YrSold'] == 2007
-PoolMask = data1['PoolArea'] == True
+# priceMask = df['SalePrice'] > 300000
+# YrMask = df['YrSold'] == 2007
+# PoolMask = df['PoolArea'] != 0
 
-print(data1.loc[1170:1200, ['SalePrice','YrSold','PoolArea']])
+priceMask = df['SalePrice'] > 300000
+YrMask = df[priceMask]['YrSold'] == 2007
+PoolMask = df[priceMask][YrMask]['PoolArea'] != 0
+type(PoolMask)
 
-# print(priceMask.head(20))
-# print(YrMask.head(20))
-# print(PoolMask.head(20))
-
+print(df[YrMask].head(15))
 
 
 
