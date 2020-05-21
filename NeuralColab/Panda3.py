@@ -26,18 +26,24 @@ data1.dropna(axis = 0, how ='any', inplace=True)
 # год продажи YrSold
 # наличие бассейна можно определить по столбцу PoolArea
 
+df = data1.loc[:,['SalePrice','YrSold','PoolArea']]
+df.head(10)
+
 #задаем маску
-priceMask = data1['SalePrice'] > 300000
-YrMask = data1['YrSold'] == 2007
-PoolMask = data1['PoolArea'] == True
+# priceMask = data1['SalePrice'] > 300000
+# YrMask = data1['YrSold'] == 2007
+# PoolMask = data1['PoolArea'] == True
 
-print(data1.loc[1170:1200, ['SalePrice','YrSold','PoolArea']])
+winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] > 1)
+print(df[winner])
 
-# print(priceMask.head(20))
-# print(YrMask.head(20))
-# print(PoolMask.head(20))
-
-
+# Задача 6
+# Добавьте к табличке data_1 новый столбец с названием 'Flag'.
+# Присвойте ему значения 0 или 1 в случайном порядке. Для этого:
+#
+# создайте одномерный массив из случайных целых чисел 0 или 1
+# размер массива должен соответствовать кол-ву наблюдений в основной табличке
+# создайте новый столбец и присвойте ему значения одномерного массива
 
 
 # fig, ax = plt.subplots(figsize=(20,12))
