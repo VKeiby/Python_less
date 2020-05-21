@@ -37,14 +37,8 @@ print(df.head())
 # YrMask = df['YrSold'] == 2007
 # PoolMask = df['PoolArea'] != 0
 
-priceMask = df['SalePrice'] > 300000
-YrMask = df[priceMask]['YrSold'] == 2007
-PoolMask = df[priceMask][YrMask]['PoolArea'] != 0
-type(PoolMask)
-
-print(df[YrMask].head(15))
-
-
+winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] != 0)
+df[winner].head()
 
 # fig, ax = plt.subplots(figsize=(20,12))
 # sns_heatmap = sns.heatmap(data1.isnull(), yticklabels=False, cbar=False, cmap='viridis')
