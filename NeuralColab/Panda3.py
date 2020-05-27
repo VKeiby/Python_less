@@ -45,10 +45,10 @@ df = data1.loc[:,['SalePrice','YrSold','PoolArea']]
 # размер массива должен соответствовать кол-ву наблюдений в основной табличке
 # создайте новый столбец и присвойте ему значения одномерного массива
 
-tmp = data1.shape[0]
-Earr = np.random.randint(0, 2, (tmp))
-data1['Flag'] = Earr
-print(data1)
+# tmp = data1.shape[0]
+# Earr = np.random.randint(0, 2, (tmp))
+# data1['Flag'] = Earr
+# print(data1)
 
 # fig, ax = plt.subplots(figsize=(20,12))
 # sns_heatmap = sns.heatmap(data1.isnull(), yticklabels=False, cbar=False, cmap='viridis')
