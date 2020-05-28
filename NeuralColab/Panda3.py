@@ -27,15 +27,15 @@ data1.dropna(axis = 0, how ='any', inplace=True)
 # наличие бассейна можно определить по столбцу PoolArea
 
 df = data1.loc[:,['SalePrice','YrSold','PoolArea']]
-df.head(10)
+# df.head(10)
 
 #задаем маску
 # priceMask = data1['SalePrice'] > 300000
 # YrMask = data1['YrSold'] == 2007
 # PoolMask = data1['PoolArea'] == True
 
-winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] > 1)
-print(df[winner])
+# winner = (df["YrSold"] == 2007) & (df["SalePrice"] > 300000) & (df["PoolArea"] > 1)
+# print(df[winner])
 
 # Задача 6
 # Добавьте к табличке data_1 новый столбец с названием 'Flag'.
@@ -45,6 +45,10 @@ print(df[winner])
 # размер массива должен соответствовать кол-ву наблюдений в основной табличке
 # создайте новый столбец и присвойте ему значения одномерного массива
 
+# tmp = data1.shape[0]
+# Earr = np.random.randint(0, 2, (tmp))
+# data1['Flag'] = Earr
+# print(data1)
 
 # fig, ax = plt.subplots(figsize=(20,12))
 # sns_heatmap = sns.heatmap(data1.isnull(), yticklabels=False, cbar=False, cmap='viridis')
