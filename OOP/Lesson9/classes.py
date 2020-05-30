@@ -1,8 +1,7 @@
 class Person:
-    name = 'John'
-
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
+        self.age = age
 
     def print_info(self):
-        print(f'Hello, my name is {self.name}')
+        print(self.name, 'is', self.age)
