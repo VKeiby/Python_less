@@ -27,16 +27,15 @@ def mean_arr(np_arr):
 # print(len(np_lst[0:]))
 # print(np_lst.size)
 
-my_array = np.loadtxt('iris.csv', delimiter=',', skiprows=1)
-my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
+# my_array = np.loadtxt('iris.csv', delimiter=',', skiprows=1)
+# my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
 
 # v1_generated_array = np.random.uniform(my_array.shape[0], my_array.shape[1])
-# my_generated_array = np.random.rand(0, 19, (150,5))
-# print(my_array.shape[0])
-# print(my_array.shape[1])
-# print(my_generated_array.shape,my_generated_array.dtype)
+my_generated_array = np.random.sample((8, 8))
+print(my_generated_array)
+print(my_generated_array.shape,my_generated_array.dtype)
 # print(v1_generated_array)
-#
+
 # mean_arr(my_array)
 #
 # my_list = my_array.tolist()
@@ -134,7 +133,7 @@ my_generated_array = np.random.rand(my_array.shape[0], my_array.shape[1])
 # Не используя цикл for, сумму значений с 3 по 7 элемент.
 # Найдите сумму квадратов последних двух элементов.
 
-generatArray = np.random.randint(0, 100, 10)
-print(generatArray)
-sumV37 = generatArray[3:7]
-print(sumV37.sum())
+# generatArray = np.random.randint(0, 100, 10)
+# print(generatArray)
+# sumV37 = generatArray[3:7]
+# print(sumV37.sum())
