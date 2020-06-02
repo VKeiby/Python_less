@@ -1,27 +1,23 @@
 # This Python file uses the following encoding: utf-8
 #
-import matplotlib.pyplot as plt
-
-# создаем синтетические данные
+import pandas as pd
 import numpy as np
-x = np.linspace(0,15,100) # Возвращает равномерно распределенные числа в указанном интервале
-print(x.shape)
-print(x)
-# рисуем график по умолчанию
-# plt.plot(x)
-y = np.cos(x) # задаем значения, соответсвующие функции косинус
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-z = 0.5 * np.sin(x)
+# Подгрузите данные datatraining.txt при помощи соответствующей функции библиотеки Pandas.
+# Преобразуйте индекс в datetime index, удалите столбец с датой.
 
-# рисуем график
-# заранее объявим объект для регулирования размер полотна для отображения графика
-plt.figure(figsize=(12,4)) # параметры в скобках определяют размер графика
-# следующие три строки будут выводить три графика функции на одном полотне
-plt.plot(x, y, label='cos(x)')
-plt.plot(x, z, label='0.5 * sin(x)')
-plt.plot(x, 4*z, label='2 * sin(x)')
-plt.title('Синусоиды')
-plt.xlabel('х')
-plt.ylabel('y, z, 4z')
-plt.legend()
-plt.show()
+db1 = pd.read_csv('datatraining.txt', index_col = 0)
+db1_backup = db1.copy()
+
+db1.index = pd.to_datetime(db1.date)
+db1.drop('date', axis=1, inplace=True)
+print(db1.head())
+
+# Постройте график всех парных взаимосвязей с разметкой цвета в соответствии с метками классов
+# (столбец Occupancy)
+#
+# P.S. используйте функцию sns.pairplot c параметром hue
+
+sns.set_style('darkgrid')

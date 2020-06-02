@@ -143,7 +143,6 @@ def get_monthName(Month):
     if Month == 12:
         return 'Декабря'
 
-
 # -------------            test
 # https://pythonworld.ru/moduli/modul-calendar.html
 # calendar.Calendar
@@ -182,16 +181,21 @@ zodiacs = [(120, 'Козерог'), (218, 'Водолей'), (320, 'Рыбы'), 
 # birthdayList = input('Введите дату рождения (ДД ММ): ')
 
 # ------------- calc -------------
-dateNow = datetime.date.today()
+dateNow = datetime.datetime.now()
 birthday = birthdayList.split()
-day = int(birthday[0])
-month = int(birthday[1])
-year = dateNow.year - age
-WDay = (weekday(year,month,day))
-eastD = eastYear[(year - 2008) % 12]
+dayU = int(birthday[0])
+monthU = int(birthday[1])
+yearU = dateNow.year - age
+dateBDay = datetime.datetime(yearU,monthU,dayU)
+if dateNow.month < dateBDay.month:
+    yearU -= 1
+elif dateNow.month == dateBDay.month and dateNow.day < dateBDay.day:
+    yearU -= 1
+eastD = eastYear[(yearU - 2008) % 12]
+WDay = (weekday(yearU,monthU,dayU))
 
 # ------------ print --------------
 print('ФИО: ',surname, name, parent)
-print('Date of birsday:',day,get_monthName(month),year,'года',(get_multiplier(WDay)))
+print('Date of birsday:',dayU,get_monthName(monthU),yearU,'года',(get_multiplier(WDay)))
 print('Знак зодиака: ',get_zodiac_of_date(birthday[1]+birthday[0]))
 print('Год по восточному календарю: ',eastD)
