@@ -28,9 +28,11 @@ print(db1.head())
 
 # **********************************
 
-plt.figure(figsize=(12,6))
+# plt.figure(figsize=(4,6))
 
 # график boxplot показывает средний, нижний и верхний квартили,
 # минимальное и максимальное значение выборки и выбросы
-sns.boxplot(data=db1, palette=sns.color_palette('Greens'), orient='h')
+# sns.boxplot(data=db1, palette=sns.color_palette('Greens'), orient='h')
+
+sns.pairplot(db1, hue='Occupancy', palette='Set1')
 plt.show()
