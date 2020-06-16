@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.colors as clr
 import seaborn as sns
 
 # Подгрузите данные datatraining.txt при помощи соответствующей функции библиотеки Pandas.
@@ -71,7 +72,8 @@ fig.set_facecolor('floralwhite')
 ax.set_facecolor('seashell')
 
 plt.show()
-
+t = clr.to_rgba(b, .5)
+print(t)
 
 # from sklearn import datasets
 # data = datasets.load_iris(return_X_y=False)
