@@ -70,15 +70,15 @@
 #         list.append(el_i)
 # print(list)
 #
-list_for_pro_task_2 = [35, 0.24, 3 + 4j, "котики", 0.45, (8, 9), "слоники", {"Мадрид": 3, 'Лондон':5}, 23498]
-print(list_for_pro_task_2)
-count = 0
-for el in list_for_pro_task_2:
-    if type(el) != dict:
-        count += 1
-        # print(type(el))
-    else: print('Словарь', count, '-й  элемент в листе')
-print('The EOL')
+# list_for_pro_task_2 = [35, 0.24, 3 + 4j, "котики", 0.45, (8, 9), "слоники", {"Мадрид": 3, 'Лондон':5}, 23498]
+# print(list_for_pro_task_2)
+# count = 0
+# for el in list_for_pro_task_2:
+#     if type(el) != dict:
+#         count += 1
+#         # print(type(el))
+#     else: print('Словарь', count, '-й  элемент в листе')
+# print('The EOL')
 
 # Заполнение словаря
 # DictOut = {}
@@ -122,3 +122,32 @@ print('The EOL')
 # np_lst = np.array(lst)
 # np_lst = np_lst.reshape((20,5))
 # print(np_lst)
+
+# for i in range(5,150):
+#     s = 0
+#     for j in range(1,i):
+#         if i%j == 0:
+#             s += j
+#     if s == i:
+#         print(i)
+
+def Palindrom(string):
+    marks = [' ']
+    # Перебираем текст для анализа на знаки и создаем новый текст
+    new_list = []
+    for el in string:
+        if el != ' ':
+            new_list.append(el)
+    new_list = list((map(lambda x: x.lower(), new_list)))
+    string = str(''.join(new_list))
+    l = len(new_list)
+    for i in range(l//2):
+        if new_list[i] != new_list[-1-i]:
+            print("It's not palindrome")
+            quit()
+    print("It's palindrome")
+
+palindrom = 'А муза рада музе без ума да разума'
+Palindrom(palindrom)
+Palindrom('А роза упала на лапу Азора')
+Palindrom('BanaNa')
