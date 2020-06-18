@@ -131,23 +131,41 @@
 #     if s == i:
 #         print(i)
 
-def Palindrom(string):
-    marks = [' ']
-    # Перебираем текст для анализа на знаки и создаем новый текст
-    new_list = []
-    for el in string:
-        if el != ' ':
-            new_list.append(el)
-    new_list = list((map(lambda x: x.lower(), new_list)))
-    string = str(''.join(new_list))
-    l = len(new_list)
-    for i in range(l//2):
-        if new_list[i] != new_list[-1-i]:
-            print("It's not palindrome")
-            quit()
-    print("It's palindrome")
+# def Palindrom(string):
+#     marks = [' ']
+#     # Перебираем текст для анализа на знаки и создаем новый текст
+#     new_list = []
+#     for el in string:
+#         if el != ' ':
+#             new_list.append(el)
+#     new_list = list((map(lambda x: x.lower(), new_list)))
+#     string = str(''.join(new_list))
+#     l = len(new_list)
+#     for i in range(l//2):
+#         if new_list[i] != new_list[-1-i]:
+#             print("It's not palindrome")
+#             quit()
+#     print("It's palindrome")
+#
+# # Palindrom('Мороз в узел, лезу взором')
+# # Palindrom(palindrom)
+# # Palindrom('А роза упала на лапу Азора')
+# Palindrom('BanaNa')
 
-palindrom = 'А муза рада музе без ума да разума'
-Palindrom(palindrom)
-Palindrom('А роза упала на лапу Азора')
-Palindrom('BanaNa')
+stroka = " 'Тихий Дон' Шолохова - великий роман-эпопея, который можно поставить в один ряд с 'Войной и миром' Толстого"
+# stroka = 'One, Two'
+
+def SumLetters(string):
+  marks = [' ',"'",'«','»','.','!','?','—',':',';',',','(',')','-','\n']
+  Up = 0
+  Low = 0
+  for el in stroka:
+      if el not in marks:
+          if el.islower():
+              Low += 1
+          else:
+              Up += 1
+  print('Количество букв в верхнем регистре: ',Up)
+  print('Количество букв в нижнем регистре: ',Low)
+
+SumLetters('На берегу Амазонки сидел Фернандо')
