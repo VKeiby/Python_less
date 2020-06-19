@@ -61,10 +61,10 @@ def prod_matrix3(matrix1, matrix2, matrix3):
 
 matrix1 = np.array([[0, 1, 2], [1, 2, 3], [2, 3, 4], [3, 4, 5]])
 matrix2 = np.array([[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5]])
-matrix3 = np.array([[0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6]])
+matrix3 = np.array([[0, 1, 2.2, 3], [1, 2, 3, 4.2], [2, 13, 4, 5], [3.1, 4, 5, 6]])
 
 matrixRes = prod_matrix3(matrix1, matrix2, matrix3)
-print(matrixRes)
+# print(matrixRes)
 
 # #Создаём массив от 0 до 999
 # x = np.array([i for i in range(1000)])
@@ -92,7 +92,9 @@ def oneMatrixT(matrix):
 
   return np.linalg.inv(prodMatrixT)       # return inverve
 
-invertM = oneMatrixT(matrixRes)
+inverseM = oneMatrixT(matrixRes)
 
-MatTrans = np.transpose(matrixRes)
-print_vector(np.dot(MatTrans,invertM))
+MatTransp = np.transpose(matrixRes)
+print(MatTransp)
+
+
