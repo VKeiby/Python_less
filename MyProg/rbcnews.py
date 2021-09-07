@@ -1,22 +1,24 @@
 from bs4 import BeautifulSoup
 import urllib.request
 
-req = urllib.request.urlopen('https://www.ua-football.com/sport')
+req = urllib.request.urlopen('https://www.rbc.ru/')
 html = req.read()
 
 soup = BeautifulSoup(html, 'html.parser')
-news = soup.find_all('li', class_='liga-news-item')
-print(news)
+news = soup.find_all('span', class_='main__feed__title')
+
 results = []
+# print(news)
 
 for item in news:
-    title = item.find('span', class_='d-block').get_text()
-    desc = item.find('span', class_='name-dop').get_text()
-    href = item.a.get('href')
+    print(item.text)
+    # title = item.find('span', class_='data-vr-headline').get_text(strip=True)
+    # desc = item.find('span', class_='name-dop').get_text(strip=True)
+    # href = item.a.get('href')
     results.append({
-        'title': title,
-        'desc': desc,
-        'href': href,
+        'title': item
+        # 'desc': desc,
+        # 'href': href,
     })
 # print(results)
 # f = open('news.txt', 'w', encoding='utf-8')
