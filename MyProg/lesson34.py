@@ -6,22 +6,22 @@ html = req.read()
 
 soup = BeautifulSoup(html, 'html.parser')
 news = soup.find_all('li', class_='liga-news-item')
-print(news)
+# print(news)
 results = []
 
 for item in news:
-    title = item.find('span', class_='d-block').get_text()
-    desc = item.find('span', class_='name-dop').get_text()
+    title = item.find('span', class_='d-block').get_text(strip=True)
+    desc = item.find('span', class_='name-dop').get_text(strip=True)
     href = item.a.get('href')
     results.append({
         'title': title,
         'desc': desc,
         'href': href,
     })
-# print(results)
-# f = open('news.txt', 'w', encoding='utf-8')
-# i = 1
-# for item in results:
-#     f.write(f'Новость № {i}\n\nНазвание: {item["title"]}\nОписание: {item["desc"]}\nСсылка: {item["href"]}\n\n**********************\n')
-#     i += 1
-# f.close()
+print(results)
+f = open('news.txt', 'w', encoding='utf-8')
+i = 1
+for item in results:
+    f.write(f'Новость № {i}\n\nНазвание: {item["title"]}\nОписание: {item["desc"]}\nСсылка: {item["href"]}\n\n**********************\n')
+    i += 1
+f.close()
