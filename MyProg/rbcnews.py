@@ -12,18 +12,14 @@ results = []
 # print(newsPlus)
 
 for item in newsPlus:
-    # print(item)
-    # currency = item.find('span', class_='news-feed__item__title').get_text(strip=True)
     title = item.find('span', class_='news-feed__item__title').get_text(strip=True)
     desc = item.find('span', class_='news-feed__item__date-text').get_text(strip=True)
     href = item.get('href')
-    print(href)
     results.append({
         'title': title,
         'desc': desc,
         'href': href,
     })
-print(results)
 f = open('news.txt', 'w', encoding='utf-8')
 i = 1
 for item in results:
