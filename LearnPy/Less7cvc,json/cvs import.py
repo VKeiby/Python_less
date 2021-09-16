@@ -50,6 +50,6 @@ with open('example_1.csv') as f:
 
 import pandas as pd
 
-DataFrame_from_csv = pd.read_csv('example_1.csv',sep = '&')
+DataFrame_from_csv = pd.read_csv('example_1.csv', sep ='&')
 print(type(DataFrame_from_csv))
 print(DataFrame_from_csv)

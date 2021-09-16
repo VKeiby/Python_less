@@ -1,5 +1,5 @@
 # Определим файл в переменную
-with open("text.txt", "r") as f:
+with open("../text.txt", "r") as f:
     origin = f.read()
 #print(type(origin))                                     #str
 list_txt = list(origin)
