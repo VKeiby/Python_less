@@ -30,22 +30,21 @@ x_test = x_test / 255
 # one_hot_encoding
 y_train = utils.to_categorical(y_train_org, 10)
 y_test = utils.to_categorical(y_test_org, 10)
-x_val1 = x_train[50000:int(50000*1.2)] #  Обучающая выборка 50.000 примеров
-y_val1 = y_train[50000:int(50000*1.2)]
-# print(x_val1.shape,x_train[:50000].shape)
-x_val2 = x_train[10000:int(10000*1.2)] #  Обучающая выборка 10.000 примеров
-y_val2 = y_train[10000:int(10000*1.2)]
-x_val3 = x_train[500:int(500*1.2)] #  Обучающая выборка 500 примеров
-y_val3 = y_train[500:int(500*1.2)]
-model = Sequential()
-model.add(Dense(800, input_dim=784, activation='relu'))
-model.add(Dense(10, activation='softmax'))
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-print(model.summary()) #Вывод структуры модели
+
 data = []
-model.fit(x_train[:50000], y_train[:50000], batch_size=128, epochs=10, verbose=1, validation_data=(x_val1, y_val1))
-data = data + [['1-Dense', 50000, round(model.evaluate(x_test, y_test, verbose = 0)[1], 3)]]
-model.fit(x_train[:10000], y_train[:10000], batch_size=128, epochs=10, verbose=1, validation_data=(x_val2, y_val2))
-data = data + [['1-Dense', 10000, round(model.evaluate(x_test, y_test, verbose = 0)[1], 3)]]
-df = pd.DataFrame(data, columns = ['model', 'size_data','val_accuracy'])
+expl = [50000,10000,500]
+
+for el in expl:
+    x_val1 = x_train[el:int(el*1.2)] #  Обучающая выборка [el] примеров
+    y_val1 = y_train[el:int(el*1.2)]
+    # print(x_val1.shape,x_train[:50000].shape)
+    model = Sequential()
+    model.add(Dense(800, input_dim=784, activation='relu'))
+    model.add(Dense(10, activation='softmax'))
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    print(model.summary()) #Вывод структуры модели
+    model.fit(x_train[:el], y_train[:el], batch_size=128, epochs=5, verbose=1, validation_data=(x_val1, y_val1))
+    data = data + [['1-Dense', el, round(model.evaluate(x_test, y_test, verbose = 0)[1], 3)]]
+
+    df = pd.DataFrame(data, columns = ['model', 'size_data','val_accuracy'])
 print(df)

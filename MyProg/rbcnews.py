@@ -23,7 +23,7 @@ for item in newsPlus:
 f = open('news.txt', 'w', encoding='utf-8')
 i = 1
 for item in results:
-    f.write(f'News № {i}\n {item["title"]}\nDescription: {item["desc"]}\nHREF: {item["href"]}\n**********************\n\n')
+    f.write(f'News № {i}\n {item["title"]}\nDescription: {item["desc"]}\nHREF: {item["href"]}\n\n**********************\n\n')
     print(f'News № {i}\n {item["title"]}\nDescription: {item["desc"]}\nHREF: {item["href"]}\n')
     # print(f'News № {i}\n {item["href"]}\n')
     i += 1

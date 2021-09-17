@@ -1,0 +1,112 @@
+News № 1
+ Курс доллара на 14 сентябряUSD ЦБ: 73,08(+0,32)
+Description: Инвестиции, 13 сен, 12:38
+HREF: https://quote.rbc.ru/exchanges/info/cb.0/72413/eod
+
+**********************
+
+News № 2
+ Курс евро на 14 сентябряEUR ЦБ: 86,12(-0,03)
+Description: Инвестиции, 13 сен, 12:38
+HREF: https://quote.rbc.ru/exchanges/info/cb.0/72383/eod
+
+**********************
+
+News № 3
+ Выписки из ЗАГСа стали доступны на портале госуслуг
+Description: Общество, 09:56
+HREF: https://www.rbc.ru/rbcfreenews/6140394b9a794717af9618c8?from=newsfeed
+
+**********************
+
+News № 4
+ Ласицкене заявила о боязни пропустить ЧМ из-за проблем с визой США
+Description: Спорт, 09:51
+HREF: https://sportrbc.ru/news/614042f49a79471ad1f0bccb?from=newsfeed
+
+**********************
+
+News № 5
+ Какие восемь факторов надо учесть при открытии вклада
+Description: РБК и Финуслуги, 09:37
+HREF: http://traffic.rbc.ru/2o2b8?from=newsfeed
+
+**********************
+
+News № 6
+ Депутат назвал сроки начала идентификации по водительским правам
+Description: Финансы, 09:33
+HREF: https://www.rbc.ru/rbcfreenews/6140301c9a794715466c8de9?from=newsfeed
+
+**********************
+
+News № 7
+ Новые iPhone покажут сегодня. Помогут ли они акциям Apple
+Description: Инвестиции, 09:33
+HREF: https://quote.rbc.ru/news/article/613f8aa49a7947f0c550abf1?from=newsfeed
+
+**********************
+
+News № 8
+ «Коммерсантъ» узнал об идее повысить налог на добычу для металлургов
+Description: Бизнес, 09:32
+HREF: https://www.rbc.ru/business/14/09/2021/614037049a794716847cf27e?from=newsfeed
+
+**********************
+
+News № 9
+ Власти раскрыли детали цифровых инноваций московского здравоохранения
+Description: Город, 09:30
+HREF: https://www.rbc.ru/technology_and_media/14/09/2021/613fa2d29a7947f6c385d22f?from=newsfeed
+
+**********************
+
+News № 10
+ «Чемпионат» назвал скаута ПСЖ основным кандидатом на пост в «Спартаке»
+Description: Спорт, 09:27
+HREF: https://sportrbc.ru/news/61403a449a794718046d6221?from=newsfeed
+
+**********************
+
+News № 11
+ Какие действия гендиректора могут привести к судам, штрафам и тюрьме
+Description: Pro, 09:26
+HREF: https://pro.rbc.ru/news/6130dd169a794745231fdd1a?from=newsfeed&utm_source=rbc.ru&utm_medium=inhouse_media&utm_campaign=newsfeed&utm_content=6130dd169a794745231fdd1a
+
+**********************
+
+News № 12
+ В Южной Корее оштрафовали Google на $176,8 млн за навязывание Android
+Description: Технологии и медиа, 09:22
+HREF: https://www.rbc.ru/technology_and_media/14/09/2021/614039089a7947170a122512?from=newsfeed
+
+**********************
+
+News № 13
+ «Убийца колбасного короля» рассказал, где скрывался после побега из ИВС
+Description: Общество, 09:19
+HREF: https://www.rbc.ru/society/14/09/2021/61403cd19a79471802152435?from=newsfeed
+
+**********************
+
+News № 14
+ США осудили Белоруссию из-за миграционного кризиса на границе с Литвой
+Description: Политика, 09:17
+HREF: https://www.rbc.ru/rbcfreenews/614032ca9a794716542467ae?from=newsfeed
+
+**********************
+
+News № 15
+ Пять шагов для организации рабочей поездки
+Description: РБК и Ozon Travel, 09:13
+HREF: http://traffic.rbc.ru/0op2f?from=newsfeed
+
+**********************
+
+News № 16
+ «Ростелеком» предложил запретить доступ к публичным серверам Google
+Description: Технологии и медиа, 09:00
+HREF: https://www.rbc.ru/technology_and_media/14/09/2021/613f65449a7947e495313ed5?from=newsfeed
+
+**********************
+
