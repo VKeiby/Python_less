@@ -51,7 +51,7 @@ print(finish_time)
 
 
 car_data = [['Brand','Model','FuelCons','Capacity','Value'],row]
-with open('report.csv', 'w') as f:
+with open('../report.csv', 'w') as f:
   writer = csv.writer(f)  #
   writer.writerows(car_data)
 print('Writing csv file complete!')
@@ -65,7 +65,7 @@ print(finish_time)
 
 import json
 dictJS = get_context(row)
-with open('dict_to_json.json', 'w') as f:
+with open('../dict_to_json.json', 'w') as f:
   json.dump(dictJS, f)
   print('Writing json file complete!')
 finish_time = datetime.now() - start_time

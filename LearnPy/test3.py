@@ -1,12 +1,10 @@
-import os,sys
-sys.path.append("../Python_less/")
-import Lesson4
-import pytest
+import sys
+sys.path.append("../")
 
 print('this is master branch pyTEST')
 print ('This branch is testing assignment from lesson 6')
 
-from Lesson4 import f,countNsort,topWord,lessLetter
+from Python_Less.LearnPy.Lesson4 import f,countNsort, lessLetter
 
 
 def test_f():
