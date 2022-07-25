@@ -1,112 +1,112 @@
 News № 1
- Курс доллара на 14 сентябряUSD ЦБ: 73,08(+0,32)
-Description: Инвестиции, 13 сен, 12:38
+ Курс доллара на 2 апреляUSD ЦБ: 83,43(-0,66)
+Description: Инвестиции, 03 апр, 12:35
 HREF: https://quote.rbc.ru/exchanges/info/cb.0/72413/eod
 
 **********************
 
 News № 2
- Курс евро на 14 сентябряEUR ЦБ: 86,12(-0,03)
-Description: Инвестиции, 13 сен, 12:38
+ Курс евро на 2 апреляEUR ЦБ: 92,15(-1,55)
+Description: Инвестиции, 03 апр, 12:35
 HREF: https://quote.rbc.ru/exchanges/info/cb.0/72383/eod
 
 **********************
 
 News № 3
- Выписки из ЗАГСа стали доступны на портале госуслуг
-Description: Общество, 09:56
-HREF: https://www.rbc.ru/rbcfreenews/6140394b9a794717af9618c8?from=newsfeed
+ Росфинмониторинг внес «Колумбайн» в список террористических организаций
+Description: Общество, 14:54
+HREF: https://www.rbc.ru/society/04/04/2022/624acf2d9a7947e23de95482?from=newsfeed
 
 **********************
 
 News № 4
- Ласицкене заявила о боязни пропустить ЧМ из-за проблем с визой США
-Description: Спорт, 09:51
-HREF: https://sportrbc.ru/news/614042f49a79471ad1f0bccb?from=newsfeed
+ Сербские фанаты потребовали ухода игрока, осудившего операцию на Украине
+Description: Спорт, 14:51
+HREF: https://sportrbc.ru/news/624ad6569a7947e5ea076b5b?from=newsfeed
 
 **********************
 
 News № 5
- Какие восемь факторов надо учесть при открытии вклада
-Description: РБК и Финуслуги, 09:37
-HREF: http://traffic.rbc.ru/2o2b8?from=newsfeed
+ AP сообщило об обысках на «яхте Вексельберга» на Майорке
+Description: Бизнес, 14:51
+HREF: https://www.rbc.ru/business/04/04/2022/624acdab9a7947e1a0823cc2?from=newsfeed
 
 **********************
 
 News № 6
- Депутат назвал сроки начала идентификации по водительским правам
-Description: Финансы, 09:33
-HREF: https://www.rbc.ru/rbcfreenews/6140301c9a794715466c8de9?from=newsfeed
+ Борисов пообещал Путину создать нетрадиционные виды оружия
+Description: Политика, 14:48
+HREF: https://www.rbc.ru/politics/04/04/2022/624ad6829a7947e5bb54205a?from=newsfeed
 
 **********************
 
 News № 7
- Новые iPhone покажут сегодня. Помогут ли они акциям Apple
-Description: Инвестиции, 09:33
-HREF: https://quote.rbc.ru/news/article/613f8aa49a7947f0c550abf1?from=newsfeed
+ В Приморье задержали экс-кандидата в губернаторы Ищенко
+Description: Общество, 14:47
+HREF: https://www.rbc.ru/society/04/04/2022/624ad99d9a7947e65bed75c0?from=newsfeed
 
 **********************
 
 News № 8
- «Коммерсантъ» узнал об идее повысить налог на добычу для металлургов
-Description: Бизнес, 09:32
-HREF: https://www.rbc.ru/business/14/09/2021/614037049a794716847cf27e?from=newsfeed
+ Учебная тревога: как прокачать знания и навыки команды и победить стресс
+Description: Экономика образования, 14:40
+HREF: https://trends.rbc.ru/trends/education/624a992a9a7947c7cf9fdf03?from=newsfeed
 
 **********************
 
 News № 9
- Власти раскрыли детали цифровых инноваций московского здравоохранения
-Description: Город, 09:30
-HREF: https://www.rbc.ru/technology_and_media/14/09/2021/613fa2d29a7947f6c385d22f?from=newsfeed
+ В ЦИАН назвали города с максимальным ростом цен на новостройки
+Description: Недвижимость, 14:39
+HREF: https://realty.rbc.ru/news/624ab63b9a7947d674349af4?from=newsfeed
 
 **********************
 
 News № 10
- «Чемпионат» назвал скаута ПСЖ основным кандидатом на пост в «Спартаке»
-Description: Спорт, 09:27
-HREF: https://sportrbc.ru/news/61403a449a794718046d6221?from=newsfeed
+ Разработчик World of Tanks объявил об уходе из России и Белоруссии
+Description: Бизнес, 14:38
+HREF: https://www.rbc.ru/business/04/04/2022/624ad6e49a7947e5dfdca1ce?from=newsfeed
 
 **********************
 
 News № 11
- Какие действия гендиректора могут привести к судам, штрафам и тюрьме
-Description: Pro, 09:26
-HREF: https://pro.rbc.ru/news/6130dd169a794745231fdd1a?from=newsfeed&utm_source=rbc.ru&utm_medium=inhouse_media&utm_campaign=newsfeed&utm_content=6130dd169a794745231fdd1a
+ Военная операция на Украине. Главное
+Description: Политика, 14:38
+HREF: https://www.rbc.ru/politics/04/04/2022/62074b119a7947b0e49b36f7?from=newsfeed
 
 **********************
 
 News № 12
- В Южной Корее оштрафовали Google на $176,8 млн за навязывание Android
-Description: Технологии и медиа, 09:22
-HREF: https://www.rbc.ru/technology_and_media/14/09/2021/614039089a7947170a122512?from=newsfeed
+ Россия ограничила упрощенную выдачу виз «недружественным странам»
+Description: Политика, 14:36
+HREF: https://www.rbc.ru/politics/04/04/2022/624ad6ba9a7947e5392d50ad?from=newsfeed
 
 **********************
 
 News № 13
- «Убийца колбасного короля» рассказал, где скрывался после побега из ИВС
-Description: Общество, 09:19
-HREF: https://www.rbc.ru/society/14/09/2021/61403cd19a79471802152435?from=newsfeed
+ Фишинг, уязвимости и защита данных: митап с экспертами кибербезопасности
+Description: РБК и МегаФон, 14:32
+HREF: https://megafon.rbc.ru/cybersecurity_interview.html?utm_source=rbc&utm_medium=main&utm_campaign=mecs21sp-cs-oppmote-m&from=newsfeed
 
 **********************
 
 News № 14
- США осудили Белоруссию из-за миграционного кризиса на границе с Литвой
-Description: Политика, 09:17
-HREF: https://www.rbc.ru/rbcfreenews/614032ca9a794716542467ae?from=newsfeed
+ Путин поздравил Орбана и Вучича с победами на выборах
+Description: Политика, 14:32
+HREF: https://www.rbc.ru/rbcfreenews/624ad03e9a7947e3097acc85?from=newsfeed
 
 **********************
 
 News № 15
- Пять шагов для организации рабочей поездки
-Description: РБК и Ozon Travel, 09:13
-HREF: http://traffic.rbc.ru/0op2f?from=newsfeed
+ В Венгрии не признан состоявшимся референдум о «защите детей от ЛГБТ»
+Description: Политика, 14:14
+HREF: https://www.rbc.ru/politics/04/04/2022/624accf19a7947e1ec0fb16e?from=newsfeed
 
 **********************
 
 News № 16
- «Ростелеком» предложил запретить доступ к публичным серверам Google
-Description: Технологии и медиа, 09:00
-HREF: https://www.rbc.ru/technology_and_media/14/09/2021/613f65449a7947e495313ed5?from=newsfeed
+ Лавров назвал данные об убийствах в Буче инсценировкой Запада и Украины
+Description: Политика, 14:05
+HREF: https://www.rbc.ru/politics/04/04/2022/624ac19a9a7947dbf8eee4e4?from=newsfeed
 
 **********************
 
