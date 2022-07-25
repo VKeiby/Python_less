@@ -32,5 +32,4 @@ for i in range (15):
     LinkTable.loc[i,1] = res
 print (sum)
 print(LinkTable.shape)
-print(LinkTable.head(14))
-
+print(LinkTable.head(15))
