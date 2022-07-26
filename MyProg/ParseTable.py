@@ -26,5 +26,6 @@ for i in range (15):
     res = parse_module.parseString(LinkTable['Problem'].iloc[i])
     res[1] = 'ethernet'
     res = ' '.join(res)
-    LinkTable.iloc[i,1] = res
+    LinkTable.iat[i,1] = res
 print(LinkTable.head())
+print(data.head())
