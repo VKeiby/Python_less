@@ -29,3 +29,4 @@ for i in range (15):
     LinkTable.iat[i,1] = res
 print(LinkTable.head())
 print(data.head())
+# https://pandas.pydata.org/docs/user_guide/10min.html
