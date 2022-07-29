@@ -29,6 +29,9 @@ data = pd.read_csv('zbx_problems_export.csv', dtype=object) # load data
 
 LinkTable = data[['Host','Problem']]
 
+# LinkTable.drop(labels=[0],axis=0) #How Delete Head? ..or ignore
+
+
 # There is can be subprogram...
 interface = Word(alphas) # Only int name
 portNum = Word(nums + '/')
@@ -41,7 +44,7 @@ for i in range (15):
     res = ' '.join(res)
     LinkTable.iat[i,1] = res
 
-# print(LinkTable)
+print(LinkTable)
 # LinkTable.to_csv('LinkTable.csv') # out file
 
 # ---------------------------------------------------------------------
