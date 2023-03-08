@@ -3,9 +3,14 @@ from sys import argv
 interface = argv[1]
 vlan = argv[2]
 
-access_template = ['switchport mode access',
-                    'switchport access vlan {}',
-                    'switchport nonegotiate',
+#interface = 'f0/21'
+#vlan = 2
+
+access_template = ['interface eth {}',
+                    'protected-port',
+                    'inline power power-by-class 3'
+                    'stp-bpdu-guard'
+                    'packet-inerror-detect 100'
                     'spanning-tree portfast',
-                    'spanning-tree bpduguard enable']
-print('\n'.join(access_template).format(5))
+print('\n'.join(access_template).format(interface,vlan))
+input("Press any key...")
