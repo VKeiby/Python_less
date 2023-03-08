@@ -1,0 +1,209 @@
+SSH@ST02.DDOCKS>ena
+
+
+
+User Name:bsquared
+
+
+
+Password:
+
+SSH@ST02.DDOCKS#skip
+
+
+
+Disable page display mode
+
+SSH@ST02.DDOCKS#sh lldp neigh det po ethernet 6/1/18
+
+
+
+Local port: 6/1/18
+
+  Neighbor: b479.c814.bd00, TTL 117 seconds
+
+    + Chassis ID (MAC address): b479.c814.bd00
+
+    + Port ID (MAC address): b479.c814.bd00
+
+    + Time to live: 120 seconds
+
+    + System name         : "S24_T_TF_343_IDF01_SP18"
+
+    + System description  : "Ruckus R310 Multimedia Hotzone Wireless AP/SW Ver\
+
+                             sion: 5.2.2.0.301"
+
+    + System capabilities : bridge, WLAN access point, router
+
+      Enabled capabilities: bridge, WLAN access point, router
+
+    + Management address (IPv4): 172.16.76.222
+
+    + Port description    : "eth0"
+
+    + Link aggregation: capable, but not aggregated
+
+    + 802.3 MAC/PHY          : auto-negotiation not supported
+
+      Operational MAU type   : Other
+
+
+
+SSH@ST02.DDOCKS#SSH@ST02.DDOCKS>ena
+
+
+
+User Name:bsquared
+
+
+
+Password:
+
+SSH@ST02.DDOCKS#skip
+
+
+
+Disable page display mode
+
+SSH@ST02.DDOCKS#sh lldp neigh det po ethernet 6/1/18
+
+
+
+Local port: 6/1/18
+
+  Neighbor: b479.c814.bd00, TTL 48 seconds
+
+    + Chassis ID (MAC address): b479.c814.bd00
+
+    + Port ID (MAC address): b479.c814.bd00
+
+    + Time to live: 120 seconds
+
+    + System name         : "S24_T_TF_343_IDF01_SP18"
+
+    + System description  : "Ruckus R310 Multimedia Hotzone Wireless AP/SW Ver\
+
+                             sion: 5.2.2.0.301"
+
+    + System capabilities : bridge, WLAN access point, router
+
+      Enabled capabilities: bridge, WLAN access point, router
+
+    + Management address (IPv4): 172.16.76.222
+
+    + Port description    : "eth0"
+
+    + Link aggregation: capable, but not aggregated
+
+    + 802.3 MAC/PHY          : auto-negotiation not supported
+
+      Operational MAU type   : Other
+
+
+
+SSH@ST02.DDOCKS#SSH@ST02.DDOCKS>ena
+
+
+
+User Name:bsquared
+
+
+
+Password:
+
+SSH@ST02.DDOCKS#skip
+
+
+
+Disable page display mode
+
+SSH@ST02.DDOCKS#sh lldp neigh det po ethernet 1/1/14
+
+
+
+Local port: 1/1/14
+
+  Neighbor: b479.c812.2210, TTL 39 seconds
+
+    + Chassis ID (MAC address): b479.c812.2210
+
+    + Port ID (MAC address): b479.c812.2210
+
+    + Time to live: 120 seconds
+
+    + System name         : "S24_T_FF_02_IDF01_SP02"
+
+    + System description  : "Ruckus R310 Multimedia Hotzone Wireless AP/SW Ver\
+
+                             sion: 5.2.2.0.301"
+
+    + System capabilities : bridge, WLAN access point, router
+
+      Enabled capabilities: bridge, WLAN access point, router
+
+    + Management address (IPv4): 172.16.76.61
+
+    + Port description    : "eth0"
+
+    + Link aggregation: capable, but not aggregated
+
+    + 802.3 MAC/PHY          : auto-negotiation not supported
+
+      Operational MAU type   : Other
+
+
+
+SSH@ST02.DDOCKS#SSH@ST02.DDOCKS>ena
+
+
+
+User Name:bsquared
+
+
+
+Password:
+
+SSH@ST02.DDOCKS#skip
+
+
+
+Disable page display mode
+
+SSH@ST02.DDOCKS#sh lldp neigh det po ethernet 1/1/3
+
+
+
+Local port: 1/1/3
+
+  Neighbor: b479.c812.51b0, TTL 108 seconds
+
+    + Chassis ID (MAC address): b479.c812.51b0
+
+    + Port ID (MAC address): b479.c812.51b0
+
+    + Time to live: 120 seconds
+
+    + System name         : "S24_T_FF_03_IDF01_SP03"
+
+    + System description  : "Ruckus R310 Multimedia Hotzone Wireless AP/SW Ver\
+
+                             sion: 5.2.2.0.301"
+
+    + System capabilities : bridge, WLAN access point, router
+
+      Enabled capabilities: bridge, WLAN access point, router
+
+    + Management address (IPv4): 172.16.76.145
+
+    + Port description    : "eth0"
+
+    + Link aggregation: capable, but not aggregated
+
+    + 802.3 MAC/PHY          : auto-negotiation not supported
+
+      Operational MAU type   : Other
+
+
+
+SSH@ST02.DDOCKS#
