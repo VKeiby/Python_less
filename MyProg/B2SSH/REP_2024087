@@ -1,0 +1,45 @@
+172.18.75.220SSH@ISP.DD>ena
+
+User Name:bsquared
+
+Password:
+SSH@ISP.DD#skip
+
+Disable page display mode
+SSH@ISP.DD#sh stack | i ICX
+
+1  S ICX7150-24P   alone   d4c1.9e46.5160   0 local   None:0
+SSH@ISP.DD#sh ver | i Serial
+
+      Serial  #:FEA3250P0MJ
+SSH@ISP.DD#172.18.75.201SSH@ST01.DDOCKS>ena
+
+User Name:bsquared
+
+Password:
+SSH@ST01.DDOCKS#skip
+
+Disable page display mode
+SSH@ST01.DDOCKS#sh stack | i ICX
+
+1  S ICX7150-24P   active  70ca.971c.ec80 255 local   Ready
+2  S ICX7150-24P   member  70ca.971c.fdc0 200 remote  Ready
+3  S ICX7150-24P   member  c0c5.20b4.c129  75 remote  Ready
+4  S ICX7150-24P   member  c0c5.20b4.d069 251 remote  Ready
+5  S ICX7150-24P   member  70ca.971c.fae0 125 remote  Ready
+6  S ICX7150-24P   standby c0c5.20b4.cfe9 254 remote  Ready
+7  S ICX7150-24P   member  70ca.971c.fe00 100 remote  Ready
+8  S ICX7150-24P   member  70ca.971c.d5e0 175 remote  Ready
+9  S ICX7150-24P   member  70ca.971d.0a40 150 remote  Ready
+SSH@ST01.DDOCKS#sh ver | i Serial
+
+      Serial  #:FEA3223R0PR
+      Serial  #:FEA3223R0XW
+      Serial  #:FEA3246Q0HE
+      Serial  #:FEA3246Q0GC
+      Serial  #:FEA3223R0WR
+      Serial  #:FEA3246Q0G8
+      Serial  #:FEA3223R0XS
+      Serial  #:FEA3223R0YK
+      Serial  #:FEA3223R0YR
+SSH@ST01.DDOCKS#

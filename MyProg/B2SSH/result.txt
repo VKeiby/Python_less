@@ -1,0 +1,14 @@
+---Next switch---
+172.18.75.220SSH@ISP.DD>ena
+1  S ICX7150-24P   alone   d4c1.9e46.5160   0 local   None:0
+      Serial  #:FEA3250P0MJ
+1  S ICX7150-24P   active  70ca.971c.ec80 255 local   Ready
+      Serial  #:FEA3223R0PR
+      Serial  #:FEA3223R0XW
+      Serial  #:FEA3246Q0HE
+      Serial  #:FEA3246Q0GC
+      Serial  #:FEA3223R0WR
+      Serial  #:FEA3246Q0G8
+      Serial  #:FEA3223R0XS
+      Serial  #:FEA3223R0YK
+      Serial  #:FEA3223R0YR
